@@ -7,12 +7,14 @@
 //
 
 #import "XTAppDelegate.h"
+#import "XTAdMobHelper.h"
 
 @implementation XTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	[[XTAdMobHelper sharedAdMobHelper] configWithApplicationId:@"ca-app-pub-3940256099942544~1458002511"];
     return YES;
 }
 

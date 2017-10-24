@@ -6,6 +6,7 @@ target 'XTAdMobHelper_Example' do
   target 'XTAdMobHelper_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+#   pod 'FBSnapshotTestCase'
+	pod 'Google-Mobile-Ads-SDK'
   end
 end
