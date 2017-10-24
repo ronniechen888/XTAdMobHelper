@@ -72,7 +72,8 @@ Stop the target settings:
 [[XTAdMobHelper sharedAdMobHelper] stopAccuracyTarget];
 ```
 
-### For detail information,you can read [AdMob for iOS](https://developers.google.com/admob/ios/quick-start) from Google.
+### For detail information,you can read this guide from Google.
+[AdMob for iOS](https://developers.google.com/admob/ios/quick-start) 
 
 ## Author
 
