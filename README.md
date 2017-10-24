@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Target: iOS 7.0+ device
+
 ## Installation
 
 XTAdMobHelper is available through [CocoaPods](http://cocoapods.org). To install
@@ -18,6 +20,18 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'XTAdMobHelper'
+```
+
+## Usage
+### To create Admob banner,you just need to write one line code:
+```objective-c
+[[XTAdMobHelper sharedAdMobHelper] showNewBannerWithAdSize:kGADAdSizeBanner 
+origin:CGPointMake((SCREEN_SIZE.width-kGADAdSizeBanner.size.width)*0.5, SCREEN_SIZE.height-kGADAdSizeBanner.size.height) 
+adUnitID:@"ca-app-pub-3940256099942544/2934735716" 
+rootViewController:self 
+onView:self.view 
+testMode:NO 
+testDeviceId:@"e7204ccc3c166fcc5cec7ac8bd3c7c8e"];
 ```
 
 ## Author
