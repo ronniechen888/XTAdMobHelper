@@ -35,6 +35,8 @@
 	
 	
 	[[XTAdMobHelper sharedAdMobHelper] stopAccuracyTarget];
+	
+//	[[XTAdMobHelper sharedAdMobHelper] removeAllBanners];
 }
 
 -(void)preloadIntersitialAction:(id)sender

@@ -10,6 +10,9 @@
 @interface XTAdMobHelper()
 @property (nonatomic,strong) GADInterstitial *interstitial;
 
+///Banner array
+@property (nonatomic,strong) NSMutableArray *bannerArray;
+
 ///Set target parameters
 @property (nonatomic,assign) GADGender gender;
 @property (nonatomic,assign) BirthDate *birthDate;
@@ -46,6 +49,7 @@
 	self = [super init];
 	
 	if (self) {
+		self.bannerArray = [[NSMutableArray alloc] init];
 		self.isNeedAccuracyTarget = NO;
 	}
 	
@@ -174,6 +178,8 @@
 	bannerView.delegate = self;
 	bannerView.alpha = 0;
 	[targetView addSubview:bannerView];
+	
+	[_bannerArray addObject:bannerView];
 	
 	GADRequest *request = [GADRequest request];
 	// Requests test ads on devices you specify. Your test device ID is printed to the console when
@@ -374,4 +380,13 @@
 	NSLog(@"Reward ad load failed:%@",error.localizedDescription);
 }
 
+#pragma mark - Remove Banner
+-(void)removeAllBanners
+{
+	for (GADBannerView *banner in _bannerArray) {
+		[banner removeFromSuperview];
+	}
+	
+	[_bannerArray removeAllObjects];
+}
 @end

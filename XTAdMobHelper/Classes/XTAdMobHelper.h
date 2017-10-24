@@ -86,4 +86,7 @@ typedef enum{
 ///Present reward video ad
 -(void)presentRewardVideoImediatelyInRootViewController:(UIViewController *)rootViewController;
 
+///Remove all banners
+-(void)removeAllBanners;
+
 @end
