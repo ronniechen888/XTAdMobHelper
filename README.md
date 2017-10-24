@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/XTAdMobHelper.svg?style=flat)](http://cocoapods.org/pods/XTAdMobHelper)
 [![Platform](https://img.shields.io/cocoapods/p/XTAdMobHelper.svg?style=flat)](http://cocoapods.org/pods/XTAdMobHelper)
 
-### Haha,it is really cool, you must be interested to integrate ad in your own app.Here is a good news.You can use this library to create Google Admob's banner,intersitial or reward video quickly.Use this library,you only need to write one line code ,then you can make money 😊.
+Haha,it is really cool, you must be interested to integrate ad in your own app.Here is a good news.You can use this library to create Google Admob's banner,intersitial or reward video quickly.Use this library,you only need to write one line code ,then you can make money 😊.If you like this easy library,please start it,thanks!
 
 ## Example
 
